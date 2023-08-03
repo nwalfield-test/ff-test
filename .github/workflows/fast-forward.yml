@@ -15,4 +15,4 @@ jobs:
 
     steps:
       - name: Checkout
-        run: echo Hi.
+        run: echo Hi...
