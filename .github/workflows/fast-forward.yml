@@ -15,4 +15,4 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: nwalfield/sq-git-test/fast-forward
+        uses: nwalfield/sq-git-test/fast-forward@main
