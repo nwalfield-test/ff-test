@@ -15,4 +15,4 @@ jobs:
 
     steps:
       - name: Checking if fast forwarding is possible
-        uses: nwalfield/sq-git-test/check-fast-forward@main
+        uses: sequoia-pgp/authenticate/check-fast-forward@main

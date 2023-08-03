@@ -13,5 +13,5 @@ jobs:
 
     steps:
       - name: Fast forwarding
-        uses: nwalfield/sq-git-test/fast-forward@main
+        uses: sequoia-pgp/authenticate/fast-forward@main
 
