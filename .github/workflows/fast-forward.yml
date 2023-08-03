@@ -1,19 +1,17 @@
 name: fast-forward
 on:
-  pull_request:
-    types: [opened, reopened. synchronize]
+  issue_comment:
+    types: [created, edited]
 jobs:
   check-fast-forward:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: read
-      # We appear to need write permission for both pull-requests and
-      # issues in order to post a comment to a pull request.
+      contents: write
       pull-requests: write
       issues: write
 
     steps:
-      - name: Checkout
+      - name: Fast forwarding
         uses: nwalfield/sq-git-test/fast-forward@main
 
